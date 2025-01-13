@@ -1,0 +1,232 @@
+<div class="bg-gray-900 min-h-screen text-white">
+    <div class="bg-gray-100 min-h-screen p-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div
+                    *ngFor="let product of products"
+                    class="bg-white shadow-lg rounded-lg overflow-hidden"
+            >
+                <img
+                        *ngIf="product.images?.length; else defaultImage"
+                        [src]="product.images[0]"
+                        alt="{{ product.name }}"
+                        class="w-full h-48 object-cover"
+                />
+                <ng-template #defaultImage>
+                    <img
+                            src="./assets/boutique/arduino-kit.png"
+                            alt="Default Image"
+                            class="w-full h-48 object-cover"
+                    />
+                </ng-template>
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold text-gray-800 truncate">
+                        {{ product.name }}
+                    </h2>
+                    <p class="text-sm text-gray-600 mt-2 line-clamp-2">
+                        {{ product.description }}
+                    </p>
+                    <div class="mt-4 flex items-center justify-between">
+          <span class="text-xl font-bold text-green-600">
+            {{ product.price | currency: 'USD' }}
+          </span>
+                        <button
+                                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                        >
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!--<div class="bg-gray-900 min-h-screen text-white">-->
+<!--    &lt;!&ndash; Bannière Boutique &ndash;&gt;-->
+<!--    <div class="bg-gradient-to-r from-gray-900 via-teal-800 to-gray-900 py-4 px-4 lg:py-6">-->
+<!--        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">-->
+<!--            &lt;!&ndash; Image à gauche &ndash;&gt;-->
+<!--            <div class="w-full lg:w-1/3 flex justify-center lg:justify-start">-->
+<!--                <img-->
+<!--                        src="./assets/boutique/boutique-banner-1.png"-->
+<!--                        alt="Boutique Banner"-->
+<!--                        class="rounded-lg shadow-lg w-3/4 object-contain"-->
+<!--                />-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Texte à droite &ndash;&gt;-->
+<!--            <div class="mt-4 lg:mt-0 lg:ml-8 w-full lg:w-2/3 text-center lg:text-left">-->
+<!--                <h1 class="text-2xl lg:text-3xl font-extrabold text-white tracking-tight leading-snug">-->
+<!--                    Des ressources pour aller plus loin 🚀-->
+<!--                </h1>-->
+<!--                <p class="mt-1 text-gray-400 text-sm lg:text-base">-->
+<!--                    Une collection pour ceux qui osent rêver, créer et innover, soigneusement choisie pour nourrir créativité et passion technologique.-->
+<!--                </p>-->
+<!--                <div class="mt-10 sm:mt-12">-->
+<!--                    <a routerLink="/contact" class="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200">-->
+<!--                                        <span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full">-->
+<!--                                            Contact-->
+<!--                                        </span>-->
+<!--                        <span class="ml-4 text-sm">Une question ? Parlons-en ! 👂 </span>-->
+<!--                        <svg class="ml-2 w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">-->
+<!--                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />-->
+<!--                        </svg>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Carrousel de produits &ndash;&gt;-->
+<!--    <div class="max-w-7xl mx-auto px-6">-->
+<!--        <p-messages severity="warn">-->
+<!--            <ng-template pTemplate>-->
+<!--                <img src="./assets/logo/pabiosoft-home-logo.png" width="34" />-->
+<!--                <div class="ml-2">-->
+<!--                    🚧 La boutique est encore en travaux! Restez curieux, nous préparons quelque chose de génial. Revenez bientôt pour découvrir nos produits! 🛍️-->
+<!--                </div>-->
+<!--            </ng-template>-->
+<!--        </p-messages>-->
+
+<!--        <p-carousel-->
+<!--                [value]="products"-->
+<!--                [numVisible]="3"-->
+<!--                [numScroll]="3"-->
+<!--                [circular]="true"-->
+<!--                [responsiveOptions]="responsiveOptions"-->
+<!--                autoplayInterval="7000"-->
+<!--                class="mt-12"-->
+<!--        >-->
+<!--            <ng-template let-product pTemplate="item">-->
+<!--                <div-->
+<!--                        class="border border-gray-700 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg m-2 p-4 shadow-lg hover:shadow-xl transition duration-300"-->
+<!--                >-->
+<!--                    &lt;!&ndash; Image avec tag &ndash;&gt;-->
+<!--                    <div class="relative group">-->
+<!--                        <img-->
+<!--                                src="{{ product.image }}"-->
+<!--                                [alt]="product.name"-->
+<!--                                class="w-full h-48 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"-->
+<!--                        />-->
+<!--                        &lt;!&ndash; Icône d'œil &ndash;&gt;-->
+<!--                        <div-->
+<!--                                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"-->
+<!--                        >-->
+<!--                            <i-->
+<!--                                    class="pi pi-eye text-white text-2xl cursor-pointer"-->
+<!--                                    (click)="showDialog(product.image)"-->
+
+<!--                            ></i>-->
+<!--                        </div>-->
+<!--                        <div-->
+<!--                                class="absolute text-xs font-semibold px-2 py-1 rounded-md"-->
+<!--                                [ngClass]="getSeverityClass(product.inventoryStatus)"-->
+<!--                                [ngStyle]="{ 'left.px': 10, 'top.px': 10 }"-->
+<!--                        >-->
+<!--                            {{ formatInventoryStatus(product.inventoryStatus) }}-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash; Informations produit &ndash;&gt;-->
+<!--                    <div class="mt-4">-->
+<!--                        <h3 class="text-lg font-semibold text-white">{{ product.name }}</h3>-->
+<!--                        <p class="text-gray-400 text-sm mt-2 line-clamp-2">{{ product.description }}</p>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash; Prix et boutons &ndash;&gt;-->
+<!--                    <div class="flex justify-between items-center mt-6">-->
+<!--                        <div class="text-lg font-bold text-blue-500">-->
+<!--                            {{ product.price | currency :'EUR' }}-->
+<!--                        </div>-->
+<!--                        <div class="flex space-x-2">-->
+<!--                            <p-button-->
+<!--                                    icon="pi pi-heart"-->
+<!--                                    severity="secondary"-->
+<!--                                    [outlined]="true"-->
+<!--                                    class="hover:text-red-500"-->
+<!--                            />-->
+<!--                                <p-button-->
+<!--                                        icon="pi pi-shopping-cart"-->
+<!--                                        styleClass="bg-blue-500 text-white hover:bg-blue-600"-->
+<!--                                        (onClick)="openCheckout(product.checkoutUrl)"-->
+<!--                                />-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </ng-template>-->
+<!--        </p-carousel>-->
+
+
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Section produits phares &ndash;&gt;-->
+<!--    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-6 py-12">-->
+<!--        <div-->
+<!--                *ngFor="let product of featuredProducts"-->
+<!--                class="border-1 surface-border border-round m-2 p-3 border-gray-700 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg shadow-md hover:shadow-xl transition duration-300"-->
+<!--        >-->
+
+<!--            <div class="relative w-full h-56 mb-3 overflow-hidden rounded-lg">-->
+<!--                <p-image-->
+<!--                        [src]="product.image"-->
+<!--                        [alt]="product.name"-->
+<!--                        [preview]="true"-->
+<!--                        class="w-full h-full object-cover"-->
+<!--                        [style]="{ borderRadius: '0.5rem' }"-->
+<!--                ></p-image>-->
+<!--                <div-->
+<!--                        class="absolute text-xs font-semibold px-2 py-1 rounded-md"-->
+<!--                        [ngClass]="getSeverityClass(product.inventoryStatus)"-->
+<!--                        [ngStyle]="{ 'left.px': 10, 'top.px': 10 }"-->
+<!--                >-->
+<!--                    {{ formatInventoryStatus(product.inventoryStatus) }}-->
+<!--                </div>-->
+
+<!--            </div>-->
+
+<!--            <div class="mb-3 font-medium text-white">-->
+<!--                <h3 class="text-xl">{{ product.name }}</h3>-->
+<!--            </div>-->
+<!--            <p class="text-gray-400 text-sm mt-2">{{ product.description }}</p>-->
+<!--            <div class="flex justify-between items-center mt-4">-->
+<!--                <div class="font-semibold text-xl text-white">-->
+<!--                    {{ product.price | currency :'EUR' }}-->
+<!--                </div>-->
+<!--                <div class="flex space-x-2">-->
+<!--                    <p-button icon="pi pi-heart" severity="secondary" [outlined]="true"></p-button>-->
+<!--                    <p-button-->
+<!--                            icon="pi pi-shopping-cart"-->
+<!--                            styleClass="ml-2"-->
+<!--                            (onClick)="openCheckout(product.checkoutUrl)"-->
+<!--                    ></p-button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--</div>-->
+
+<!--&lt;!&ndash;Appercu des image du caroussel&ndash;&gt;-->
+<!--<p-dialog-->
+<!--        header="Aperçu du produit"-->
+<!--        [modal]="true"-->
+<!--        [(visible)]="visible"-->
+<!--        [style]="{ width: '50rem' }"-->
+<!--        [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"-->
+<!--        [maximizable]="true"-->
+<!--        (onHide)="closeImageModal()"-->
+<!--&gt;-->
+<!--    <img-->
+<!--            [src]="selectedImage"-->
+<!--            alt="Selected Product"-->
+<!--            class="max-w-full max-h-screen rounded-lg mx-auto"-->
+<!--    />-->
+<!--</p-dialog>-->
+

@@ -1,0 +1,541 @@
+[
+  {
+    "@context": "/contexts/Article",
+    "@id": "/articles/3a9d7c2f-5e2b-4f3c-928a-1b9c8d3f9a12",
+    "@type": "Article 1",
+    "coverImageUrl": "https://img.icons8.com/color/48/vue-js.png",
+    "coverText": "Exploring Vue 3 Composition API for Scalable Applications",
+    "date": "2024-10-25T14:15:00.000Z",
+    "status": "published",
+    "url":"https://www.itsolutionstuff.com/post/whats-new-in-laravel-11-new-features-and-latest-updatesexample.html",
+
+    "author": {
+      "@id": "/authors/7d8e9b3f-4c6a-5f7d-8e1a-2c9b8f7e1d12",
+      "name": "Emily Clarke",
+      "country": "Canada",
+      "profileImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1igwcWN4GUH-z9hOeNnbZYCYjtUAJxHgwXw&s"
+    },
+    "chapters": [
+      {
+        "@id": "/chapters/stu123",
+        "title": "Introduction to Composition API",
+        "content": [
+          {
+            "type": "text",
+            "value": "Vue 3's Composition API offers a flexible way to organize and scale your code. This chapter introduces the basics and shows how it differs from the Options API..."
+          },
+          {
+            "type": "code",
+            "language": "javascript",
+            "value": "export default {\n  setup() {\n    const count = ref(0);\n    const increment = () => count.value++;\n    return { count, increment };\n  }\n};"
+          },
+          {
+            "type": "media",
+            "mediaType": "image",
+            "src": "https://via.placeholder.com/800x400",
+            "altText": "Placeholder Image"
+          },
+          {
+            "type": "text",
+            "value": "The Composition API provides a more expressive and reusable way to write your components..."
+          }
+        ]
+      },
+      {
+        "@id": "/chapters/vwx456",
+        "title": "Reactivity and Lifecycle Hooks",
+        "content": [
+          {
+            "type": "text",
+            "value": "Learn how to manage reactivity and leverage lifecycle hooks in Vue 3 for efficient data handling and state management..."
+          },
+          {
+            "type": "media",
+            "mediaType": "image",
+            "src": "https://www.redhat.com/rhdc/managed-files/iaas-paas-saas-diagram5.1-1638x1046.png",
+            "altText": "Placeholder Image"
+          }
+        ]
+      },
+      {
+        "@id": "/chapters/yz123",
+        "title": "Reusable Composition Functions",
+        "content": [
+          {
+            "type": "text",
+            "value": "Learn how to manage reactivity and leverage lifecycle hooks in Vue 3 for efficient data handling and state management..."
+          }
+        ]
+      }
+    ],
+    "technologies": [
+      {
+        "@id": "/technologies/98b2d4c1-8d1e-4f2b-95c3-5e6a8d2f3c4e",
+        "name": "Vue",
+        "logoUrl": "https://img.icons8.com/color/48/vue-js.png"
+      },
+      {
+        "@id": "/technologies/10c4e8d3-7f2b-4e1f-96b4-3d8e9f4c2b1f",
+        "name": "JavaScript",
+        "logoUrl": "https://img.icons8.com/color/48/javascript.png"
+      },
+      {
+        "@id": "/technologies/98b2d4c1-8d1e-4f2b-95c3-5e6a8d2f3c4e",
+        "name": "Vue",
+        "logoUrl": "https://img.icons8.com/color/48/vue-js.png"
+      },
+      {
+        "@id": "/technologies/98b2d4c1-8d1e-4f2b-95c3-5e6a8d2f3c4e",
+        "name": "Vue",
+        "logoUrl": "https://img.icons8.com/color/48/vue-js.png"
+      }
+    ],
+    "profileImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-cUXxUM3DEIE8wMNkRXxDOWWagwtdqOoXhg&s",
+    "relatedArticles": [
+      {
+        "@id": "/articles/5e2c8f1a-6b3d-4f2e-9d9a-8e1c6d3f9c12",
+        "title": "Using Vue 3 with TypeScript",
+        "coverImageUrl": "https://img.icons8.com/color/48/typescript.png",
+        "author": {
+          "@id": "/authors/6f8b1c2d-9e1a-3f2d-6b4c-5d8f9c1e3a7d",
+          "name": "Liam Smith",
+          "country": "United States"
+        }
+      }
+    ],
+    "estimateTime": 30
+  },
+  {
+    "@context": "/contexts/Article",
+    "@id": "/articles/4c1e8f3b-5f2a-4d3c-91b2-0f9c7e1a5d12",
+    "@type": "Article 2",
+    "coverImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-cUXxUM3DEIE8wMNkRXxDOWWagwtdqOoXhg&s",
+    "coverText": "Data Science Essentials with Python and Pandas",
+    "date": "2024-10-27T10:00:00.000Z",
+    "status": "published",
+    "url":"https://www.itsolutionstuff.com/post/whats-new-in-laravel-11-new-features-and-latest-updatesexample.html",
+    "author": {
+      "@id": "/authors/2d1f9b3a-4e7b-5f2c-8d3e-9c4e5b7f1d23",
+      "name": "Daniela Santos",
+      "country": "Brazil",
+      "profileImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1igwcWN4GUH-z9hOeNnbZYCYjtUAJxHgwXw&s"
+    },
+    "chapters": [
+      {
+        "@id": "/chapters/abc234",
+        "title": "Introduction to Data Science with Python",
+        "content": [
+          {
+            "type": "text",
+            "value": "Python is a versatile language for data science. In this chapter, we introduce data science concepts and show how to get started with Python..."
+          },
+          {
+            "type": "code",
+            "language": "python",
+            "value": "import numpy as np\nimport pandas as pd\n\n# Generate a random dataset\ndata = np.random.randn(100, 3)\ndf = pd.DataFrame(data, columns=['A', 'B', 'C'])\nprint(df.head())"
+          },
+          {
+            "type": "text",
+            "value": "In this example, we created a random dataset using NumPy and converted it into a Pandas DataFrame. This forms the foundation of many data science workflows."
+          }
+        ]
+      },
+      {
+        "@id": "/chapters/def567",
+        "title": "Data Manipulation with Pandas",
+        "content": [
+          {
+            "type": "text",
+            "value": "Pandas is a powerful tool for data manipulation. Learn how to clean, transform, and analyze data using Pandas..."
+          },
+          {
+            "type": "code",
+            "language": "python",
+            "value": "import pandas as pd\n\n# Create a sample DataFrame\ndata = {\n    'Name': ['Alice', 'Bob', 'Charlie'],\n    'Age': [25, 30, 35],\n    'Salary': [50000, 60000, 70000]\n}\ndf = pd.DataFrame(data)\n\n# Calculate average salary\naverage_salary = df['Salary'].mean()\nprint(f'Average Salary: {average_salary}')"
+          },
+          {
+            "type": "text",
+            "value": "This example demonstrates how to create a simple DataFrame and perform calculations such as finding the average salary."
+          }
+        ]
+      },
+      {
+        "@id": "/chapters/ghi890",
+        "title": "Data Visualization Techniques",
+        "content": [
+          {
+            "type": "text",
+            "value": "Effective data visualization is key to insights. Discover how to create compelling visualizations with Matplotlib and Seaborn..."
+          },
+          {
+            "type": "code",
+            "language": "python",
+            "value": "import matplotlib.pyplot as plt\nimport seaborn as sns\n\n# Sample data\ndata = [15, 25, 30, 10, 20]\nlabels = ['A', 'B', 'C', 'D', 'E']\n\n# Create a pie chart\nplt.pie(data, labels=labels, autopct='%1.1f%%', startangle=90)\nplt.title('Data Distribution')\nplt.show()"
+          },
+          {
+            "type": "text",
+            "value": "Here, we used Matplotlib to create a simple pie chart representing data distribution. You can further customize it with Seaborn for more advanced visualizations."
+          }
+        ]
+      }
+    ],
+    "technologies": [
+      {
+        "@id": "/technologies/15c3d5b9-7f1e-4f5a-8e6b-3c9b4d7e1f6d",
+        "name": "Python",
+        "logoUrl": "https://img.icons8.com/color/48/python.png"
+      },
+      {
+        "@id": "/technologies/23d4e9b6-5f2c-4e1f-92d3-4b8e7c6f1a4f",
+        "name": "Pandas",
+        "logoUrl": "https://img.icons8.com/color/48/pandas.png"
+      }
+    ],
+    "profileImageUrl": "https://img.icons8.com/color/48/python.png",
+    "relatedArticles": [
+      {
+        "@id": "/articles/6f9a1d2b-7c2e-4e3f-9d1a-2f4c5b8e9a3d",
+        "title": "Advanced Data Analysis with Python",
+        "coverImageUrl": "https://img.icons8.com/color/48/python.png",
+        "author": {
+          "@id": "/authors/8c1f7e3a-9b2e-5f3d-7a6d-2e9f4b5c3f7e",
+          "name": "Marta Lopez",
+          "country": "Spain"
+        }
+      }
+    ],
+    "estimateTime": 25
+  },
+  {
+    "@context": "/contexts/Article",
+    "@id": "/articles/7d3f8a1e-9b2c-4f5e-92d1-3c4b5e6a7f9c",
+    "@type": "Article 3",
+    "coverImageUrl": "https://img.icons8.com/color/48/docker.png",
+    "coverText": "Docker for Beginners: Simplifying Containerization",
+    "date": "2024-10-28T08:45:00.000Z",
+    "status": "published",
+    "url":"https://www.itsolutionstuff.com/post/whats-new-in-laravel-11-new-features-and-latest-updatesexample.html",
+    "author": {
+      "@id": "/authors/3f1c7d2b-6a9e-5b3f-8d4c-2e5a9f8b3c12",
+      "name": "Samuel Green",
+      "country": "Australia",
+      "profileImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1igwcWN4GUH-z9hOeNnbZYCYjtUAJxHgwXw&s"
+    },
+    "chapters": [
+      {
+        "@id": "/chapters/jkl234",
+        "title": "Why Use Docker?",
+        "content": [
+          {
+            "type": "text",
+            "value": "Docker is revolutionizing how we deploy applications. This chapter covers the basics of Docker and why it's beneficial for developers..."
+          },
+          {
+            "type": "code",
+            "language": "bash",
+            "value": "# Check if Docker is installed\ndocker --version\n\n# Pull a sample image from Docker Hub\ndocker pull hello-world\n\n# Run the container\ndocker run hello-world"
+          },
+          {
+            "type": "text",
+            "value": "In this example, we verify Docker installation, pull the 'hello-world' image, and run a basic container to understand how Docker works."
+          }
+        ]
+      },
+      {
+        "@id": "/chapters/mno678",
+        "title": "Creating Your First Docker Container",
+        "content": [
+          {
+            "type": "text",
+            "value": "Learn how to create, manage, and run Docker containers. This hands-on chapter guides you through the Docker CLI and basic commands..."
+          },
+          {
+            "type": "code",
+            "language": "bash",
+            "value": "# Create a simple Dockerfile\necho 'FROM alpine\nCMD [\"echo\", \"Hello from Docker!\"]' > Dockerfile\n\n# Build the image\ndocker build -t my-alpine .\n\n# Run the container\ndocker run my-alpine"
+          },
+          {
+            "type": "text",
+            "value": "This example shows how to create a Dockerfile, build a custom image, and run a container using the Docker CLI."
+          }
+        ]
+      },
+      {
+        "@id": "/chapters/pqr910",
+        "title": "Docker Compose and Multi-Container Applications",
+        "content": [
+          {
+            "type": "text",
+            "value": "Explore Docker Compose and how to manage multi-container applications with ease. Great for setting up complex environments..."
+          },
+          {
+            "type": "code",
+            "language": "yaml",
+            "value": "version: '3.8'\nservices:\n  web:\n    image: nginx:latest\n    ports:\n      - '8080:80'\n  database:\n    image: mysql:latest\n    environment:\n      MYSQL_ROOT_PASSWORD: example\n      MYSQL_DATABASE: example_db\n"
+          },
+          {
+            "type": "text",
+            "value": "In this example, we define a `docker-compose.yml` file to set up a multi-container application with Nginx as the web server and MySQL as the database."
+          }
+        ]
+      }
+    ],
+    "technologies": [
+      {
+        "@id": "/technologies/45a8c3e1-9d2f-4f1e-85b6-7d3e5c9f2a1f",
+        "name": "Docker",
+        "logoUrl": "https://img.icons8.com/color/48/docker.png"
+      },
+      {
+        "@id": "/technologies/67d8e9b3-4f1a-5b6d-8c2e-3f4b5e7c9d1f",
+        "name": "Angular",
+        "logoUrl": "https://img.icons8.com/color/48/angularjs.png"
+      }
+    ],
+    "profileImageUrl": "https://img.icons8.com/color/48/docker.png",
+    "relatedArticles": [
+      {
+        "@id": "/articles/8c2e4f1a-6d3b-5f1e-9a7d-4e2b3c5d8e9f",
+        "title": "Kubernetes vs Docker: Understanding the Differences",
+        "coverImageUrl": "https://img.icons8.com/color/48/kubernetes.png",
+        "author": {
+          "@id": "/authors/7d8e9c3f-5b1e-4a3f-8d9a-6e7c2b5f4a9f",
+          "name": "Lucy Adams",
+          "country": "United Kingdom"
+        }
+      }
+    ],
+    "estimateTime": 20
+  },
+  {
+    "@context": "/contexts/Article",
+    "@id": "/articles/9e1c5a3f-8b2d-4f7e-92d4-1b9c6d2a5f3c",
+    "@type": "Article 4",
+    "coverImageUrl": "https://img.icons8.com/color/48/angularjs.png",
+    "coverText": "Building Real-Time Applications with Angular and Firebase",
+    "date": "2024-10-29T16:30:00.000Z",
+    "status": "published",
+    "url":"https://www.itsolutionstuff.com/post/whats-new-in-laravel-11-new-features-and-latest-updatesexample.html",
+    "author": {
+      "@id": "/authors/5f1c7e2b-9d3a-4b1e-8f2d-6c4e8a7f1d2e",
+      "name": "Olivia Roberts",
+      "country": "New Zealand",
+      "profileImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1igwcWN4GUH-z9hOeNnbZYCYjtUAJxHgwXw&s"
+    },
+    "chapters": [
+      {
+        "@id": "/chapters/stu345",
+        "title": "Setting Up Firebase with Angular",
+        "content": [
+          {
+            "type": "text",
+            "value": "Discover how to build robust APIs with Spring Boot..."
+          },
+          {
+            "type": "media",
+            "mediaType": "image",
+            "src": "https://via.placeholder.com/800x400",
+            "altText": "Placeholder Image"
+          },
+          {
+            "type": "text",
+            "value": "In this example, we define a REST controller with a single endpoint..."
+          },
+          {
+            "type": "media",
+            "mediaType": "video",
+            "src": "https://www.w3schools.com/html/mov_bbb.mp4",
+            "altText": "Sample Video"
+          },
+          {
+            "type": "code",
+            "language": "java",
+            "value": "public static void main(String[] args) {\n    System.out.println(\"Hello World!\");\n}"
+          },
+          {
+            "type": "text",
+            "value": "In this example, we define a REST controller with a single endpoint..."
+          }
+        ]
+      },
+      {
+        "@id": "/chapters/vwx789",
+        "title": "Building Real-Time Data Sync",
+        "content": [
+          {
+            "type": "text",
+            "value": "This chapter explores real-time data synchronization between Firebase and Angular, enhancing user experience with seamless updates."
+          },
+          {
+            "type": "code",
+            "language": "typescript",
+            "value": "// Define your Firestore data service\nimport { Injectable } from '@angular/core';\nimport { AngularFirestore } from '@angular/fire/compat/firestore';\nimport { Observable } from 'rxjs';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class DataService {\n  constructor(private firestore: AngularFirestore) {}\n\n  getItems(): Observable<any[]> {\n    return this.firestore.collection('items').valueChanges();\n  }\n\n  addItem(item: any): Promise<void> {\n    const id = this.firestore.createId();\n    return this.firestore.collection('items').doc(id).set({ ...item, id });\n  }\n}"
+          },
+          {
+            "type": "text",
+            "value": "This example demonstrates how to set up a service in Angular to retrieve and add items to a Firebase Firestore collection in real-time."
+          }
+        ]
+      },
+      {
+        "@id": "/chapters/yz234",
+        "title": "Adding User Authentication",
+        "content": [
+          {
+            "type": "text",
+            "value": "Implement secure user authentication with Firebase in your Angular application. This chapter covers best practices and example code for managing users."
+          },
+          {
+            "type": "code",
+            "language": "typescript",
+            "value": "// Configure Firebase authentication\nimport { AngularFireAuth } from '@angular/fire/compat/auth';\nimport { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class AuthService {\n  constructor(private afAuth: AngularFireAuth) {}\n\n  login(email: string, password: string): Promise<any> {\n    return this.afAuth.signInWithEmailAndPassword(email, password);\n  }\n\n  logout(): Promise<void> {\n    return this.afAuth.signOut();\n  }\n\n  getUser(): Observable<any> {\n    return this.afAuth.authState;\n  }\n}"
+          },
+          {
+            "type": "text",
+            "value": "In this example, an `AuthService` is created to handle user login, logout, and authentication state using Firebase's authentication module."
+          }
+        ]
+      }
+    ],
+    "technologies": [
+      {
+        "@id": "/technologies/67d8e9b3-4f1a-5b6d-8c2e-3f4b5e7c9d1f",
+        "name": "Angular",
+        "logoUrl": "https://img.icons8.com/color/48/angularjs.png"
+      },
+      {
+        "@id": "/technologies/89b1d4e5-7c3f-4e2d-95f2-6a9e5c4b1f8e",
+        "name": "Firebase",
+        "logoUrl": "https://img.icons8.com/color/48/firebase.png"
+      }
+    ],
+    "profileImageUrl": "https://img.icons8.com/color/48/angularjs.png",
+    "relatedArticles": [
+      {
+        "@id": "/articles/9d3a8f4b-5e1c-4f2e-8a7b-3d6c5e2f9a3d",
+        "title": "Progressive Web Apps with Angular",
+        "coverImageUrl": "https://img.icons8.com/color/48/angularjs.png",
+        "author": {
+          "@id": "/authors/8f1a9d2c-7b3e-4c1f-92d5-4e6b9c7a5f2e",
+          "name": "Lucas Brown",
+          "country": "South Africa"
+        }
+      }
+    ],
+    "estimateTime": 15
+  },
+  {
+    "@context": "/contexts/Article",
+    "@id": "/articles/0d2b7c4e-9f1a-4e3d-8d5a-1e7c6a5f9b8c",
+    "@type": "Article",
+    "coverImageUrl": "https://img.icons8.com/color/48/java-coffee-cup-logo.png",
+    "coverText": "Spring Boot Essentials for RESTful API Development",
+    "date": "2024-10-30T13:10:00.000Z",
+    "status": "published",
+    "url":"https://www.itsolutionstuff.com/post/whats-new-in-laravel-11-new-features-and-latest-updatesexample.html",
+    "author": {
+      "@id": "/authors/1f8c3d5e-9a7b-4b6c-92e1-3d9c8e1a5f2d",
+      "name": "Rajesh Patel",
+      "country": "India",
+      "profileImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1igwcWN4GUH-z9hOeNnbZYCYjtUAJxHgwXw&s"
+    },
+    "chapters": [
+      {
+        "@id": "/chapters/jkl678",
+        "title": "Getting Started with Spring Boot",
+        "content": [
+          {
+            "type": "text",
+            "value": "Spring Boot simplifies Java development. Learn the basics of Spring Boot and set up a project in minutes."
+          },
+          {
+            "type": "media",
+            "mediaType": "image",
+            "src": "https://via.placeholder.com/800x400",
+            "altText": "Placeholder Image"
+          },
+          {
+            "type": "code",
+            "language": "java",
+            "value": "// Main class for a Spring Boot application\nimport org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\n\n@SpringBootApplication\npublic class DemoApplication {\n    public static void main(String[] args) {\n        SpringApplication.run(DemoApplication.class, args);\n    }\n}"
+          },
+          {
+            "type": "text",
+            "value": "This basic setup demonstrates how to start a Spring Boot application using the `@SpringBootApplication` annotation, which encapsulates the configurations for a standalone Spring project."
+          }
+        ]
+      },
+      {
+        "@id": "/chapters/mno234",
+        "title": "Building RESTful APIs",
+        "content": [
+          {
+            "type": "text",
+            "value": "Secure your APIs with Spring Security. This chapter covers JWT authentication and role-based access control."
+          },
+          {
+            "type": "code",
+            "language": "java",
+            "value": "// Security configuration for Spring Boot\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.security.config.annotation.web.builders.HttpSecurity;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\nimport org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;\n\n@Configuration\n@EnableWebSecurity\npublic class SecurityConfig extends WebSecurityConfigurerAdapter {\n\n    @Override\n    protected void configure(HttpSecurity http) throws Exception {\n        http.csrf().disable()\n            .authorizeRequests()\n            .antMatchers(\"/api/public/**\").permitAll()\n            .anyRequest().authenticated()\n            .and()\n            .httpBasic();\n    }\n}"
+          },
+          {
+            "type": "media",
+            "mediaType": "image",
+            "src": "https://via.placeholder.com/800x400",
+            "altText": "Placeholder Image"
+          },
+          {
+            "type": "text",
+            "value": "This example showcases a simple Spring Security configuration. Public APIs are accessible without authentication, while all other endpoints require user authentication."
+          }
+        ]
+
+      },
+      {
+        "@id": "/chapters/pqr567",
+        "title": "Security and Authentication",
+        "content": [
+          {
+            "type": "text",
+            "value": "RESTful APIs are essential for modern web applications. Discover how to build robust APIs with Spring Boot."
+          },
+          {
+            "type": "code",
+            "language": "java",
+            "value": "// Simple REST Controller in Spring Boot\nimport org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RequestMapping;\nimport org.springframework.web.bind.annotation.RestController;\n\n@RestController\n@RequestMapping(\"/api\")\npublic class HelloController {\n    @GetMapping(\"/hello\")\n    public String sayHello() {\n        return \"Hello, World!\";\n    }\n}"
+          },
+          {
+            "type": "text",
+            "value": "This code defines a basic REST controller with a single endpoint `/hello`. The `@RestController` annotation makes the class a controller where every method returns a domain object instead of a view."
+          }
+        ]
+      }
+    ],
+    "technologies": [
+      {
+        "@id": "/technologies/10e8f7c3-9d5a-4f2b-83b4-6c2a5d8f9e1d",
+        "name": "Spring Boot",
+        "logoUrl": "https://img.icons8.com/color/48/spring-logo.png"
+      },
+      {
+        "@id": "/technologies/25f4e7c1-8d6b-4b1a-9c2e-7e8f1c9d4a6d",
+        "name": "Java",
+        "logoUrl": "https://img.icons8.com/color/48/java-coffee-cup-logo.png"
+      }
+    ],
+    "profileImageUrl": "https://img.icons8.com/color/48/java-coffee-cup-logo.png",
+    "relatedArticles": [
+      {
+        "@id": "/articles/2e1c4d5b-9f8a-3b7e-92f6-7c5a3e8f1d4b",
+        "title": "Microservices Architecture with Spring Cloud",
+        "coverImageUrl": "https://img.icons8.com/color/48/spring-logo.png",
+        "author": {
+          "@id": "/authors/4f8d1c3a-7b2e-5a6d-8f3b-2e9c7d5a4f3e",
+          "name": "Aditi Verma",
+          "country": "India"
+        }
+      }
+    ],
+    "estimateTime": 12
+  }
+]

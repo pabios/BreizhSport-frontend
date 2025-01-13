@@ -1,0 +1,111 @@
+{
+  "@context": "/api/contexts/Product",
+  "@id": "/api/products",
+  "@type": "Collection",
+  "totalItems": 20,
+  "member": [
+    {
+      "@id": "/api/products/1efce849-2822-6b62-b192-dbb749144040",
+      "@type": "Product",
+      "name": "Nesciunt nobis sunt beatae ut est facilis laboriosam sed. Quo odit quis maiores dolorem possimus. Voluptatem nam recusandae adipisci et. Vel cupiditate voluptatem qui.",
+      "description": "In aperiam in non atque labore. Harum adipisci veniam quidem dolore laboriosam saepe. Earum voluptatem aut praesentium sapiente.",
+      "price": 54574588.33,
+      "createdAt": "1990-12-14T19:57:37+00:00",
+      "updatedAt": "2018-09-04T15:39:10+00:00",
+      "categories": [
+        "placeat",
+        "nostrum"
+      ],
+      "images": [
+        "https://via.placeholder.com/640x480.png/009944?text=exercitationem",
+        "https://via.placeholder.com/640x480.png/00ff55?text=aspernatur",
+        "https://via.placeholder.com/640x480.png/0033aa?text=aut",
+        "https://via.placeholder.com/640x480.png/009922?text=cupiditate",
+        "https://via.placeholder.com/640x480.png/00bbee?text=magnam",
+        "https://via.placeholder.com/640x480.png/00ff00?text=quam"
+      ]
+    },
+    {
+      "@id": "/api/products/1efce849-283a-63ac-84a1-dbb749144040",
+      "@type": "Product",
+      "name": "Et placeat sapiente voluptates omnis cupiditate aut. In nulla aperiam fuga ut dolores. Ut reprehenderit exercitationem eius aperiam facilis.",
+      "description": "Nam ullam praesentium voluptatibus. Vitae odit enim quis aut. Est voluptas vitae id ut. Quia eligendi quas veniam non.",
+      "price": 63872329.31,
+      "createdAt": "1977-05-28T00:50:46+00:00",
+      "updatedAt": "2018-12-07T20:40:51+00:00",
+      "categories": [
+        "placeat",
+        "molestias"
+      ],
+      "images": [
+        "https://via.placeholder.com/640x480.png/00cc66?text=perferendis",
+        "https://via.placeholder.com/640x480.png/0099cc?text=molestiae",
+        "https://via.placeholder.com/640x480.png/0000ff?text=magni",
+        "https://via.placeholder.com/640x480.png/00aa88?text=est",
+        "https://via.placeholder.com/640x480.png/00dd77?text=omnis",
+        "https://via.placeholder.com/640x480.png/002222?text=inventore"
+      ]
+    },
+    {
+      "@id": "/api/products/1efce849-283c-6c92-9637-dbb749144040",
+      "@type": "Product",
+      "name": "Et voluptatem velit qui pariatur ipsa sunt ullam. Eligendi cum illum rerum distinctio est sequi doloribus. Dolorem ut culpa et pariatur reprehenderit ducimus.",
+      "description": "Dolores sed quaerat sed voluptatum ut officia quaerat. Omnis labore quaerat at amet cumque corrupti tempora. Ipsa ea architecto temporibus fuga. Natus non corrupti quis.",
+      "price": 81949525.4,
+      "createdAt": "1996-10-22T08:28:56+00:00",
+      "updatedAt": "2013-08-15T05:30:28+00:00",
+      "categories": [
+        "nostrum",
+        "molestias"
+      ],
+      "images": [
+        "https://via.placeholder.com/640x480.png/005522?text=optio",
+        "https://via.placeholder.com/640x480.png/005500?text=eveniet",
+        "https://via.placeholder.com/640x480.png/00ff66?text=quis"
+      ]
+    },
+    {
+      "@id": "/api/products/1efce849-283f-61b8-b90f-dbb749144040",
+      "@type": "Product",
+      "name": "Voluptates aspernatur quasi et velit quisquam minus possimus. Vero est itaque rerum. Excepturi error ipsa nemo laboriosam id. Alias voluptate molestias aut quia quos nisi voluptas. Veritatis rerum et soluta rerum itaque eaque.",
+      "description": "Consequatur voluptates voluptatum ea commodi blanditiis. Aliquid ex consequuntur quae recusandae. In facere tenetur sit possimus quo. Omnis nesciunt quisquam et voluptates est libero.",
+      "price": 87277427.35,
+      "createdAt": "1972-09-27T06:34:12+00:00",
+      "updatedAt": "2000-07-28T11:19:04+00:00",
+      "categories": [
+        "nostrum",
+        "molestias"
+      ],
+      "images": []
+    },
+    {
+      "@id": "/api/products/1efce849-2841-618e-b70f-dbb749144040",
+      "@type": "Product",
+      "name": "Quisquam ad dignissimos enim sunt perspiciatis. Possimus voluptatem et rerum molestiae est ut nobis. Suscipit necessitatibus nostrum laborum quia consequatur sequi atque et.",
+      "description": "Dolores cum quis repellat et. Soluta voluptas officiis deleniti hic incidunt cum totam. Ut illum reiciendis eum adipisci.",
+      "price": 38673540.73,
+      "createdAt": "1979-01-08T05:19:51+00:00",
+      "updatedAt": "2004-05-31T06:18:34+00:00",
+      "categories": [
+        "nostrum",
+        "molestias"
+      ],
+      "images": [
+        "https://via.placeholder.com/640x480.png/006677?text=delectus",
+        "https://via.placeholder.com/640x480.png/0033bb?text=voluptas",
+        "https://via.placeholder.com/640x480.png/000000?text=vel",
+        "https://via.placeholder.com/640x480.png/00ffcc?text=in",
+        "https://via.placeholder.com/640x480.png/009911?text=impedit",
+        "https://via.placeholder.com/640x480.png/008866?text=quam",
+        "https://via.placeholder.com/640x480.png/00ee77?text=soluta"
+      ]
+    }
+  ],
+  "view": {
+    "@id": "/api/products?page=1",
+    "@type": "PartialCollectionView",
+    "first": "/api/products?page=1",
+    "last": "/api/products?page=4",
+    "next": "/api/products?page=2"
+  }
+}
